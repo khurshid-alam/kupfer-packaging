@@ -1,3 +1,16 @@
+kupfer (0+v208-8) unstable; urgency=high
+
+  Bugfix release
+
+  [Karol Będkowski]
+  *  Merge all changes from github repo (kupfer-adds)
+  *  firefox: allow turn on/off loading tags
+  *  zim: fix loading notebook list
+  *  Merge upstream changes (po files)
+  *  zim: simpify loading zim notebooks
+
+ -- Karol Będkowski <karol.bedkowski@gmail.com>  Tue, 02 Aug 2016 12:55:49 +0200
+
 kupfer (0+v208-6) unstable; urgency=medium
 
   * Team upload.
