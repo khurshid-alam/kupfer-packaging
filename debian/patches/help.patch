@@ -1,0 +1,16 @@
+Description: Workaround missing xml file
+Author: Luca Falavigna <dktrkranz@debian.org>
+Forwarded: https://launchpad.net/kupfer/+bug/789628
+
+Index: kupfer-0+v208/help/C/index.page
+===================================================================
+--- kupfer-0+v208.orig/help/C/index.page	2012-06-01 19:51:14.000000000 +0200
++++ kupfer-0+v208/help/C/index.page	2013-12-19 20:59:35.843842139 +0100
+@@ -15,7 +15,6 @@
+     </copyright>
+ 
+     <license>Creative Commons Share Alike 3.0</license>
+-    <include href="legal.xml" xmlns="http://www.w3.org/2001/XInclude" />
+   </info>
+ 
+   <title>Kupfer Manual</title>

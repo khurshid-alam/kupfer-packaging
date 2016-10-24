@@ -1,0 +1,2 @@
+?package(kupfer):needs="X11" section="Applications/File Management"\
+  title="kupfer" command="/usr/bin/kupfer"

@@ -1,0 +1,3 @@
+version=3
+opts=uversionmangle=s/^/0\+/ \
+https://github.com/engla/kupfer/tags .*/(v\d[\d\.]+)

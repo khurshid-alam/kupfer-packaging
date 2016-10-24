@@ -1,0 +1,9 @@
+Document: kupfer
+Title: Kupfer Manual
+Author: Ulrik Sverdrup <ulrik.sverdrup@gmail.com>
+Abstract: This manual describes what kupfer is.
+Section: Help/Books
+
+Format: HTML
+Index: /usr/share/doc/kupfer/Manual.html
+Files: /usr/share/doc/kupfer/*.html

@@ -1,0 +1,36 @@
+Source: kupfer
+Section: utils
+Priority: optional
+Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Uploaders: Hugo Lefeuvre <hugo6390@orange.fr>,
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: gettext,
+                     gnome-doc-utils,
+                     intltool,
+                     python (>= 2.6.6-3~),
+                     python-docutils
+Standards-Version: 3.9.5
+X-Python-Version: >= 2.6
+Homepage: http://engla.github.io/kupfer/
+Vcs-Svn: svn://anonscm.debian.org/python-apps/packages/kupfer/trunk/
+Vcs-Browser: http://anonscm.debian.org/viewvc/python-apps/packages/kupfer/trunk/
+
+Package: kupfer
+Architecture: all
+Depends: dbus,
+         python-dbus,
+         python-gobject (>= 2.18),
+         python-gtk2 (>= 2.16),
+         python-keybinder,
+         python-xdg,
+         ${misc:Depends},
+         ${python:Depends}
+Recommends: python-keyring, python-wnck
+Suggests: python-cjson, python-gdata, python-qrencode
+Description: fast and lightweight desktop summoner/launcher
+ Kupfer is a summoner/launcher in the style of Quicksilver or GNOME Do. It
+ can search and browse your files, launch desired applications and object you
+ need in a quicker way.
+ .
+ Kupfer is written in Python and has a flexible architecture based on plugins
+ to extend its features.

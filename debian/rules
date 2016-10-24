@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python2
+
+clean:
+	./waf distclean
+	rm -fr build .lock-waf* po/.intlcache
+	find Documentation -name "*.html" -delete
+	find waflib -name "*.pyc" -delete
+	dh $@
+
+override_dh_auto_configure:
+	PYTHONDIR=/usr/share/kupfer ./waf configure --prefix=/usr --nopyc --nopyo \
+		--bindir=/usr/share/kupfer --no-runtime-deps --no-install-nautilus-extension
+
+override_dh_auto_install:
+	./waf install --destdir=$(CURDIR)/debian/kupfer
+	install -m 0755 $(CURDIR)/build/bin/kupfer $(CURDIR)/debian/kupfer/usr/share/kupfer/kupfer-activate.sh
+	rm -f $(CURDIR)/debian/kupfer/usr/share/kupfer/kupfer/kupfer
+	rm -f $(CURDIR)/debian/kupfer/usr/share/gnome/help/kupfer/*/license.page
+	rm -f $(CURDIR)/debian/kupfer/usr/share/kupfer/art/COPYING
+	make -C Documentation
+	rst2man Documentation/Manpage.rst build/kupfer.1
+
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod +x debian/kupfer/usr/share/kupfer/kupfer.py
