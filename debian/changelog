@@ -1,3 +1,66 @@
+kupfer (0+v311-1~webupd8~zesty0) zesty; urgency=medium
+
+  * New upstream release
+
+ -- Alin Andrei <andrew@webupd8.org>  Thu, 23 Feb 2017 10:56:18 +0200
+
+kupfer (0+v310-1~webupd8~yakkety0) yakkety; urgency=medium
+
+  * New upstream release
+  * Recommend devhelp for the devhelp plugin
+  * Recommend gir1.2-appindicator3-0.1, libappindicator3-1 for the new
+    optional AppIndicator
+
+ -- Alin Andrei <andrew@webupd8.org>  Tue, 21 Feb 2017 14:26:55 +0200
+
+kupfer (0+v309-1~webupd8~zesty0) zesty; urgency=medium
+
+  * New upstream release
+
+ -- Alin Andrei <andrew@webupd8.org>  Mon, 20 Feb 2017 12:15:58 +0200
+
+kupfer (0+v308.1-1~webupd8~yakkety0) yakkety; urgency=medium
+
+  * New upstream release
+
+ -- Alin Andrei <andrew@webupd8.org>  Fri, 17 Feb 2017 11:39:44 +0200
+
+kupfer (0+v307-1~webupd8~zesty0) zesty; urgency=medium
+
+  * New upstream release
+
+ -- Alin Andrei <andrew@webupd8.org>  Thu, 16 Feb 2017 11:01:39 +0200
+
+kupfer (0+v306-1~webupd8~yakkety1) yakkety; urgency=medium
+
+  * New upstream bugfix release
+  * Add use-rst2html-instead-of-rst2html5-for-yakkety.patch
+
+ -- Alin Andrei <andrew@webupd8.org>  Tue, 14 Feb 2017 11:42:29 +0200
+
+kupfer (0+v305-1~webupd8~yakkety0) yakkety; urgency=medium
+
+  * New upstream bugfix release
+  * Recommend python3-urllib3, python3-contextlib2, they are needed by
+    some plugins
+
+ -- Alin Andrei <andrew@webupd8.org>  Mon, 13 Feb 2017 10:38:55 +0200
+
+kupfer (0+v304.1-1~webupd8~zesty0) zesty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Alin Andrei <andrew@webupd8.org>  Thu, 09 Feb 2017 10:54:18 +0200
+
+kupfer (0+v303-1~webupd8~yakkety0) yakkety; urgency=medium
+
+  * New upstream release
+  * Use Python3 for waf build script
+  * Update dependencies
+  * many other packaging changes I forgot
+
+ -- Alin Andrei <andrew@webupd8.org>  Mon, 06 Feb 2017 12:25:38 +0300
+
 kupfer (0+v208-8) unstable; urgency=high
 
   Bugfix release

@@ -1,1 +1,2 @@
-debian/kupfer.py	usr/share/kupfer
+build/bin/kupfer usr/bin/
+build/bin/kupfer-exec usr/bin/
