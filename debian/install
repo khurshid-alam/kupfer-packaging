@@ -1,3 +1,1 @@
 debian/kupfer.py	usr/share/kupfer
-debian/plugins/skpdvdd/recdirs.py usr/share/kupfer/kupfer/plugin
-debian/plugins/hugosenari/remmina/remmina.py usr/share/kupfer/kupfer/plugin
